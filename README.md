@@ -18,7 +18,7 @@ Add the library dependency to your build.gradle file.
 ```groovy
 dependencies {
     ...
-    compile 'com.txusballesteros:AutoscaleEditText:1.0'
+    implementation 'com.github.qkopy:AutosizeEditText:1.1'
 }
 ```
 
