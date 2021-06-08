@@ -25,13 +25,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    compileSdkVersion 30
 
     defaultConfig {
         applicationId "com.txusballesteros.demo"
         minSdkVersion 14
-        targetSdkVersion 23
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
     }
@@ -44,6 +43,6 @@ android {
 }
 
 dependencies {
-    compile project(':AutoscaleEditText')
-    compile 'com.android.support:appcompat-v7:23.1.0'
+    implementation project(':AutoscaleEditText')
+    implementation 'androidx.appcompat:appcompat:1.3.0'
 }

@@ -112,7 +112,7 @@ public class AutoscaleEditText extends EditText {
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode==KeyEvent.KEYCODE_ENTER) {
+        if (keyCode == KeyEvent.KEYCODE_ENTER) {
             return true;
         }
         return super.onKeyDown(keyCode, event);
@@ -177,16 +177,22 @@ public class AutoscaleEditText extends EditText {
         animator.setDuration(animationDuration);
         animator.addListener(new Animator.AnimatorListener() {
             @Override
-            public void onAnimationStart(Animator animation) { resizeInProgress = true; }
+            public void onAnimationStart(Animator animation) {
+                resizeInProgress = true;
+            }
 
             @Override
-            public void onAnimationEnd(Animator animation) { resizeInProgress = false; }
+            public void onAnimationEnd(Animator animation) {
+                resizeInProgress = false;
+            }
 
             @Override
-            public void onAnimationCancel(Animator animation) { }
+            public void onAnimationCancel(Animator animation) {
+            }
 
             @Override
-            public void onAnimationRepeat(Animator animation) { }
+            public void onAnimationRepeat(Animator animation) {
+            }
         });
         animator.start();
     }
