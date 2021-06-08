@@ -23,6 +23,7 @@
  * Contact: Txus Ballesteros <txus.ballesteros@gmail.com>
  */
 buildscript {
+    ext.kotlin_version = '1.5.0'
     repositories {
 //        maven {
 //            url "https://oss.sonatype.org/content/repositories/snapshots/"
@@ -34,6 +35,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.2.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         //classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
         //classpath 'com.github.dcendents:android-maven-gradle-plugin:1.3'
     }
