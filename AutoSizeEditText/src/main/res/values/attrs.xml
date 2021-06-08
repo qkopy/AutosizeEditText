@@ -23,25 +23,10 @@
  *
  * Contact: Txus Ballesteros <txus.ballesteros@gmail.com>
 -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="16dp"
-    android:orientation="vertical">
-
-    <com.qkopy.autosizeedittext.AutoscaleEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textNoSuggestions|textMultiLine"
-        android:textSize="30sp"
-        android:hint="@string/hint"/>
-
-    <android.widget.Space
-        android:layout_width="match_parent"
-        android:layout_height="8dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/text_fill"/>
-</LinearLayout>
+<resources>
+    <declare-styleable name="AutoscaleEditText">
+        <attr name="linesLimit" format="float" />
+        <attr name="textScale" format="float" />
+        <attr name="animationDuration" format="integer" />
+    </declare-styleable>
+</resources>
