@@ -1,1 +1,1 @@
-include ':app', ':AutoscaleEditText'
+include ':AutoscaleEditText'
